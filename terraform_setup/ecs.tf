@@ -108,9 +108,9 @@ resource "aws_ecs_service" "main" {
   }
 
   depends_on = [
-    "aws_iam_role.ecs",
-    "aws_ecr_repository.app_repository",
-    "aws_lb_listener_rule.all"
+    aws_iam_role.ecs,
+    aws_ecr_repository.app_repository,
+    aws_lb_listener_rule.al
   ]
 }
 
